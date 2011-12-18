@@ -3,9 +3,9 @@ data = load('data.txt');
 num_of_clusters = 10;
 K = num_of_clusters;
 
-randindx = randperm(size(input,1));
+randindx = randperm(size(data,1));
 
-centroids = input(randindx(1:K), :);
+centroids = data(randindx(1:K), :);
 
 st = 0;
 for m = 1:9
